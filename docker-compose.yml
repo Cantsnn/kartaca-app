@@ -1,0 +1,23 @@
+version: "3"
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: kartaca-api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+  client:
+    build:
+      context: ./kartaca-client
+      dockerfile: Dockerfile
+    image: kartaca-client
+    ports:
+      - "3000:80"
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+ 
