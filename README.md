@@ -22,15 +22,14 @@ Temel kullanıcı işlemleri yapılabilen, ana sayfada listenen ürünlere tekli
  # Kurulumlar
  1. Bu depoyu yerel bilgisayarınıza kopyalayın.
  2. docker-compose.yml dosyasını açın.
-3. Redis URL'sini değiştirin (opsiyonel).
-4. Terminalde aşağıdaki komudu çalıştırın:
+3. Terminalde aşağıdaki komudu çalıştırın:
 
 ```shell
 docker-compose up
 
 ```
 
-5. Proje http://localhost:3000 portunda çalışacaktır.
+4. Proje http://localhost:3000 portunda çalışacaktır.
 
 # Kullanım
 1. Hesap oluşturma
